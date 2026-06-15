@@ -1181,9 +1181,6 @@
 
     function onSuccess() {
       sendBtn.disabled = false; sendBtn.textContent = sendLabel;
-      var first = name.split(" ")[0];
-      document.getElementById("confirm-body").textContent =
-        "Thank you, " + first + " — your " + section + " proposal is in.\nWatch your inbox for confirmation.";
       show("confirm", "#confirm-h");
       form.reset();
       syncSegments();

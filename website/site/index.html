@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIRE!!! — Devoted to Younger African American Artists · Call for Proposals 2026</title>
+<meta name="description" content="FIRE!!! Magazine, the 2026 revival of the 1926 Harlem Renaissance journal. Call for Proposals open June 15 – August 14, 2026. Culture · Politics · Economics. Absolutely no AI.">
+
+<!-- FIRE!!! Design System: tokens + fonts + styles -->
+<link rel="stylesheet" href="../_ds/fire-design-system-8ea6219d-2568-433d-913f-6ad49cabd472/tokens/fonts.css">
+<link rel="stylesheet" href="../_ds/fire-design-system-8ea6219d-2568-433d-913f-6ad49cabd472/tokens/colors.css">
+<link rel="stylesheet" href="../_ds/fire-design-system-8ea6219d-2568-433d-913f-6ad49cabd472/tokens/typography.css">
+<link rel="stylesheet" href="../_ds/fire-design-system-8ea6219d-2568-433d-913f-6ad49cabd472/tokens/spacing.css">
+<link rel="stylesheet" href="../_ds/fire-design-system-8ea6219d-2568-433d-913f-6ad49cabd472/styles.css">
+
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bone-50); color: var(--ink-900); font-family: var(--font-body); }
+  ::selection { background: var(--ink-900); color: var(--bone-50); }
+  a { color: var(--color-link); }
+  em { font-style: italic; }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute; left: 1rem; top: -5rem; z-index: 60;
+    background: var(--ink-900); color: var(--bone-50);
+    padding: 0.75rem 1.25rem; text-decoration: none;
+    font-family: var(--font-display); font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.14em; font-size: 0.8125rem;
+    transition: top 180ms var(--ease-out);
+  }
+  .skip-link:focus { top: 1rem; }
+
+  /* Capture- & reduced-motion-safe entrance: resting state is visible;
+     under no-preference we animate FROM hidden on load. */
+  /* Resting state is ALWAYS visible. Entrance animates a subtle transform
+     ONLY — opacity stays 1 throughout — so content is readable even if the
+     preview iframe throttles/pauses CSS animations at frame 0. */
+  .rise { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: no-preference) {
+    .rise { animation: fire-rise 380ms var(--ease-out); }
+    @keyframes fire-rise { from { transform: translateY(12px); } to { transform: none; } }
+  }
+
+  /* Letterpress grain — optional, ≤4% opacity, toggled via Tweaks */
+  .grain::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+    opacity: var(--grain-opacity, 0);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    transition: opacity 200ms var(--ease-out);
+  }
+</style>
+</head>
+<body class="grain">
+<a class="skip-link" href="#the-call">Skip to the call</a>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- FIRE!!! Design System bundle: exposes window.FIREDesignSystem_8ea621 -->
+<script src="../_ds/fire-design-system-8ea6219d-2568-433d-913f-6ad49cabd472/_ds_bundle.js"></script>
+
+<!-- Tweaks shell + the site -->
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="marks.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>

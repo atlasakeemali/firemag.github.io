@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en" data-surface="committed" data-ochre="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIRE!!! — Devoted to Younger Black American Artists | Call for Proposals 2026</title>
+<meta name="description" content="FIRE!!! Magazine — the 2026 revival of the 1926 Harlem Renaissance journal. Call for Proposals open June 15 – August 15, 2026. Politics + Culture + Identity.">
+<meta property="og:title" content="FIRE!!! — Call for Proposals 2026">
+<meta property="og:description" content="Devoted to Younger Black American Artists. Politics + Culture + Identity. Proposals open June 15 – August 15, 2026.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og-card.svg">
+<meta property="og:image:alt" content="FIRE!!! — Call for Proposals 2026">
+<meta property="og:url" content="https://firemag.org/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FIRE!!! — Call for Proposals 2026">
+<meta name="twitter:description" content="Devoted to Younger Black American Artists. Politics + Culture + Identity. Proposals open June 15 – August 15, 2026.">
+<meta name="twitter:image" content="og-card.svg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#d73337">
+<meta name="ext-resource-dependency" content="assets/FIRE-Call-for-Proposals.pdf">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,400..900&family=Limelight&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     FIRE!!! — Call for Proposals. African Art Deco, after Aaron
+     Douglas, FIRE!! (1926). Self-contained. Tokens inlined.
+     ============================================================ */
+  :root {
+    /* Flame — the 1926 cover red */
+    --flame-100:#fedbd7; --flame-200:#fbb7b0; --flame-300:#f28881; --flame-400:#e45d58;
+    --flame-500:#d73337; --flame-600:#c21725; --flame-700:#9e141e; --flame-800:#721216;
+    /* Ink — warm near-black, tinted to flame hue */
+    --ink-300:#a59c9b; --ink-500:#6a6160; --ink-700:#423837; --ink-800:#2f2322; --ink-900:#201514;
+    /* Bone — warm paper, never pure white */
+    --bone-50:#f9f2ed; --bone-100:#f3e9e2; --bone-200:#e7dcd2;
+    /* Ochre — ceremonial gold */
+    --ochre-400:#deaf5c; --ochre-500:#cf9a3d; --ochre-600:#b47825;
+    /* Turquoise — secondary accent, used sparingly */
+    --turquoise-400:#5cc9bc; --turquoise-500:#2fb4a6; --turquoise-600:#1f8a7f;
+
+    --font-display:"Big Shoulders","Big Shoulders Display",Oswald,Impact,sans-serif;
+    --font-deco:"Limelight","Big Shoulders",serif;
+    --font-body:"Newsreader",Georgia,"Times New Roman",serif;
+
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+    --ease-mv:cubic-bezier(0.77,0,0.175,1);
+    --dur-press:140ms; --dur-hover:180ms; --dur-reveal:260ms;
+
+    /* tweak-driven */
+    --mast-max:16rem;             /* hero masthead scale ceiling */
+    --mast-vw:19vw;
+    --accent:var(--ochre-400);    /* ochre on; off -> remapped below */
+
+    --wrap:72rem;
+    --measure:68ch;
+  }
+  [data-ochre="off"]{ --accent:var(--bone-50); }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+  body{
+    margin:0; background:var(--flame-700); color:var(--bone-50);
+    font-family:var(--font-body); font-size:1.125rem; line-height:1.6;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  ::selection{ background:var(--ink-900); color:var(--bone-50); }
+  em{ font-style:italic; }
+  strong{ font-weight:600; }
+
+  /* ---------- a11y ---------- */
+  .skip-link{
+    position:absolute; left:1rem; top:-5rem; z-index:60;
+    background:var(--ink-900); color:var(--bone-50);
+    font-family:var(--font-display); font-weight:600; text-transform:uppercase;
+    letter-spacing:0.12em; font-size:0.8125rem;
+    padding:0.85rem 1.35rem; text-decoration:none;
+    transition:top var(--dur-hover) var(--ease-out);
+  }
+  .skip-link:focus{ top:1rem; }
+  :focus-visible{ outline:3px solid var(--bone-50); outline-offset:3px; }
+  [data-surface] .band--read :focus-visible{ outline-color:var(--ink-900); }
+  [data-surface="drenched"] .band--read :focus-visible{ outline-color:var(--bone-50); }
+
+  /* ---------- layout primitives ---------- */
+  .wrap{ width:min(var(--wrap),100% - 3rem); margin-inline:auto; }
+  .band{ padding-block:clamp(3.5rem,8vw,6.5rem); }
+  p{ max-width:var(--measure); text-wrap:pretty; }
+
+  /* ---------- type primitives ---------- */
+  .kicker{
+    font-family:var(--font-display); font-weight:600; text-transform:uppercase;
+    letter-spacing:0.14em; font-size:0.8125rem; line-height:1.1; margin:0;
+  }
+  .display{
+    font-family:var(--font-display); font-weight:800; line-height:0.95;
+    letter-spacing:0.01em; text-transform:uppercase; margin:0; text-wrap:balance;
+  }
+  .deco{ font-family:var(--font-deco); font-weight:400; }
+  .usd{ color:var(--turquoise-600); }
+  .rule{ border:0; border-top:6px solid currentColor; margin:0; }
+
+  /* ============================================================
+     BAND TONES — the engine behind the drenched/committed tweak.
+     Each band exposes local vars; sections paint with them.
+     ============================================================ */
+  .band--read{
+    --ground:var(--bone-50); --tx:var(--ink-900); --tx2:var(--ink-700);
+    --rl:var(--ink-900); --acc:var(--flame-600); --hd:var(--ink-900);
+    --tbl-line:var(--bone-200);
+  }
+  [data-surface="drenched"] .band--read{
+    --ground:var(--flame-700); --tx:var(--bone-50); --tx2:var(--bone-200);
+    --rl:var(--bone-50); --acc:var(--accent); --hd:var(--bone-50);
+    --tbl-line:var(--flame-600);
+  }
+  .band--read{ background:var(--ground); color:var(--tx); }
+
+  .band--deep{ /* always deep-red poster ground */
+    background:var(--flame-700); color:var(--bone-50);
+    --tx:var(--bone-50); --tx2:var(--bone-200); --rl:var(--bone-50);
+    --acc:var(--accent); --hd:var(--bone-50);
+  }
+  .band--ink{ /* the black silhouette planes */
+    background:var(--ink-900); color:var(--bone-50);
+    --tx:var(--bone-50); --tx2:var(--bone-200); --rl:var(--bone-50);
+    --acc:var(--flame-400); --hd:var(--bone-50);
+  }
+  .band--flame{ /* the drenched poster surface (hero/confirm) */
+    background:var(--flame-500); color:var(--ink-900);
+    --tx:var(--ink-900); --tx2:var(--ink-800); --rl:var(--ink-900);
+    --acc:var(--ink-900); --hd:var(--ink-900);
+  }
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:sticky; top:0; z-index:40;
+    background:var(--bone-50); color:var(--ink-900);
+    border-bottom:6px solid var(--ink-900);
+  }
+  [data-surface="drenched"] .nav{
+    background:var(--ink-900); color:var(--bone-50); border-bottom-color:var(--flame-500);
+  }
+  .nav .wrap{ display:flex; align-items:baseline; gap:1.5rem; flex-wrap:wrap; padding:0.85rem 0; }
+  .nav__mark{
+    font-family:var(--font-display); font-weight:900; font-size:1.6rem;
+    letter-spacing:0.01em; color:inherit; text-decoration:none; margin-right:auto;
+    white-space:nowrap;
+  }
+  .nav__links{ display:flex; gap:1.4rem; flex-wrap:wrap; align-items:baseline; }
+  .nav a.lnk{
+    font-family:var(--font-display); font-weight:600; text-transform:uppercase;
+    letter-spacing:0.13em; font-size:0.8125rem; white-space:nowrap;
+    color:inherit; text-decoration:none; padding-bottom:2px;
+    border-bottom:3px solid transparent; transition:border-color var(--dur-hover) var(--ease-out);
+  }
+  .nav a.lnk:hover{ border-bottom-color:currentColor; }
+  .nav a.lnk[aria-current="true"]{ color:var(--flame-600); border-bottom-color:var(--flame-600); }
+  [data-surface="drenched"] .nav a.lnk[aria-current="true"]{ color:var(--flame-400); border-bottom-color:var(--flame-400); }
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:0.5rem;
+    font-family:var(--font-display); font-weight:700; text-transform:uppercase;
+    letter-spacing:0.08em; line-height:1; white-space:nowrap; cursor:pointer;
+    border:3px solid transparent; border-radius:0; text-decoration:none;
+    padding:0.95rem 2rem; font-size:1rem; min-height:48px;
+    transition:transform var(--dur-press) var(--ease-out),
+               background-color var(--dur-hover) var(--ease-out),
+               color var(--dur-hover) var(--ease-out);
+  }
+  .btn--lg{ padding:1.1rem 2.5rem; font-size:1.0625rem; }
+  .btn:active{ transform:scale(0.97); }
+  /* primary: ink ground, bone text — reads on every surface */
+  .btn--primary{ background:var(--ink-900); color:var(--bone-50); }
+  .btn--primary:hover{ background:var(--ink-800); }
+  /* secondary: outline of current rule color */
+  .btn--secondary{ background:transparent; color:var(--tx,var(--ink-900)); border-color:var(--rl,var(--ink-900)); }
+  .btn--secondary:hover{ background:var(--rl,var(--ink-900)); color:var(--ground,var(--bone-50)); }
+  .btn--flame{ background:var(--flame-600); color:var(--bone-50); }
+  .btn--flame:hover{ background:var(--flame-700); }
+
+  /* ---------- sawtooth divider ---------- */
+  .saw{ display:block; width:100%; height:26px; }
+  .saw--flip{ transform:scaleY(-1); }
+
+  /* ---------- ring + ornament ---------- */
+  .ring{ display:inline-block; width:0.7em; height:0.7em; border-radius:50%;
+    border:0.16em solid currentColor; position:relative; vertical-align:middle; }
+  .ring::after{ content:""; position:absolute; inset:0.16em; border-radius:50%; background:currentColor; }
+
+  /* ---------- reveal (transform-only; resting state always visible) ---------- */
+  .reveal{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{ animation:fire-rise 460ms var(--ease-out) both; animation-delay:var(--d,0ms); }
+    @keyframes fire-rise{ from{ transform:translateY(12px); } to{ transform:none; } }
+  }
+
+  /* ============================================================
+     SECTION-SPECIFIC
+     ============================================================ */
+  /* hero */
+  .hero{ background:var(--flame-500); color:var(--ink-900); padding:clamp(2.5rem,6vw,4.5rem) 0 3.25rem; }
+  .hero__eyebrow{ display:flex; align-items:center; gap:0.7rem; flex-wrap:wrap;
+    font-family:var(--font-display); font-weight:700; text-transform:uppercase;
+    letter-spacing:0.18em; font-size:clamp(0.95rem,1.5vw,1.15rem); color:var(--ink-900); margin:0; }
+  .eyebrow-sym{ display:inline-flex; align-items:center; height:1.15em; }
+  .eyebrow-sym svg{ display:block; height:100%; width:auto; }
+  .hero__mark{ font-family:var(--font-display); font-weight:900; text-transform:uppercase;
+    font-size:clamp(4.2rem,var(--mast-vw),var(--mast-max)); line-height:0.84; letter-spacing:0.005em;
+    color:var(--ink-900); margin:0.4rem 0 0; white-space:nowrap; }
+  .hero__tag{ font-family:var(--font-body); font-style:italic; font-weight:400;
+    font-size:clamp(1.25rem,2.6vw,1.85rem); color:var(--ink-900); margin:0.85rem 0 0; max-width:none; }
+  .hero__dates{ margin-top:2.25rem; border-top:6px solid var(--ink-900); padding-top:0.9rem;
+    display:flex; align-items:center; gap:0.85rem 1.4rem; flex-wrap:wrap; }
+  .hero__dates .lab{ font-family:var(--font-display); font-weight:700; text-transform:uppercase;
+    letter-spacing:0.14em; font-size:0.8125rem; white-space:nowrap; }
+  .hero__dates .val{ font-family:var(--font-display); font-weight:800; text-transform:uppercase;
+    font-size:clamp(1.4rem,3.2vw,2.4rem); line-height:1; color:var(--bone-50); }
+  .hero__cta{ margin-top:2.25rem; display:flex; gap:1rem; flex-wrap:wrap; }
+
+  /* generic opener block (kicker + rule + headline) */
+  .opener .rule{ color:var(--rl); width:100%; }
+  .opener .kicker{ color:var(--tx2); padding-top:0.75rem; }
+  .opener h2{ color:var(--hd); margin:0.4rem 0 0; }
+
+  /* the call */
+  .call h2{ font-size:clamp(2.4rem,6vw,4.25rem); }
+  .call .lede{ font-size:clamp(1.3rem,2.5vw,1.65rem); font-weight:500; line-height:1.5; margin:2rem 0 0; color:var(--tx); }
+  .call .turn{ font-family:var(--font-display); font-weight:800; text-transform:uppercase;
+    font-size:clamp(1.75rem,4.2vw,2.9rem); line-height:1; color:var(--acc); margin:1.25rem 0 0; }
+  .call .body{ font-size:1.125rem; line-height:1.6; margin:1.5rem 0 0; color:var(--tx); }
+
+  /* the call — 1926 archive plate + foreword */
+  .call-archive{ margin-top:3.25rem; padding-top:2.75rem; border-top:1px solid var(--rl);
+    display:grid; grid-template-columns:auto minmax(0,1fr); gap:2.5rem; align-items:center; }
+  .plate{ margin:0; max-width:330px; }
+  .plate__frame{ border:6px solid var(--rl); background:var(--ink-900); box-shadow:10px 10px 0 color-mix(in srgb,var(--rl) 22%, transparent); }
+  .plate__frame img{ display:block; width:100%; height:auto; }
+  .plate__cap{ font-family:var(--font-display); font-weight:600; text-transform:uppercase; letter-spacing:0.1em;
+    font-size:0.72rem; line-height:1.55; color:var(--tx2); margin-top:0.95rem; }
+  .plate__cap .no{ color:var(--acc); }
+  .foreword{ margin:0; padding:0.35rem 0 0.35rem 1.6rem; border-left:8px solid var(--rl); }
+  .foreword p{ font-family:var(--font-body); font-style:italic; font-weight:500; font-size:clamp(1.5rem,2.9vw,2.15rem);
+    line-height:1.27; color:var(--acc); margin:0; max-width:18ch; }
+  .foreword cite{ display:block; font-style:normal; font-family:var(--font-display); font-weight:600;
+    text-transform:uppercase; letter-spacing:0.14em; font-size:0.8125rem; color:var(--tx2); margin-top:1.35rem; }
+  @media (max-width:560px){ .call-archive{ grid-template-columns:1fr; gap:2.25rem; } .plate{ max-width:280px; } }
+
+  /* the call — the triad (three sections) */
+  .trifires{ margin-top:0; }
+  #the-call .trifires{ margin-top:3.25rem; }
+  .trifires__head{ border-top:6px solid var(--rl); padding-top:0.9rem; }
+  .trifires__head .kicker{ color:var(--tx2); }
+  .trifires__head h3{ font-family:var(--font-display); font-weight:800; text-transform:uppercase;
+    line-height:0.95; font-size:clamp(2rem,5vw,3.1rem); color:var(--hd); margin:0.35rem 0 0; }
+  .trifires__grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.5rem,3vw,2.75rem); margin-top:2.6rem; }
+  .sect{ border-top:3px solid var(--rl); padding-top:1.4rem; }
+  .sect__mark{ height:80px; margin-bottom:1.15rem; color:var(--hd); }
+  .sect__mark svg{ display:block; height:80px; width:auto; }
+  .sect h4{ font-family:var(--font-display); font-weight:800; text-transform:uppercase; line-height:0.95;
+    font-size:clamp(1.8rem,4vw,2.4rem); color:var(--hd); margin:0 0 0.55rem; }
+  .sect p{ font-family:var(--font-body); font-size:1.02rem; line-height:1.55; color:var(--tx2); margin:0; max-width:34ch; }
+  .trifires__lede{ font-family:var(--font-body); font-size:clamp(1.15rem,1.6vw,1.3rem); line-height:1.6; color:var(--tx2); margin:1.75rem 0 0; max-width:60ch; }
+  .sect__topics{ margin-top:0.9rem !important; font-size:0.98rem !important; }
+  .trifires__coda{ font-family:var(--font-body); font-style:italic; font-size:clamp(1.15rem,1.7vw,1.3rem); line-height:1.6; color:var(--tx); margin:0; padding-top:1.5rem; border-top:3px solid var(--rl); max-width:58ch; }
+  .trifires__foot{ display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:2rem clamp(1.5rem,3vw,2.75rem); align-items:center; margin-top:2.75rem; }
+  .trifires__foot .btn{ justify-self:start; align-self:center; margin-top:1.5rem; }
+  @media (max-width:720px){ .trifires__foot{ grid-template-columns:1fr; } .trifires__foot .btn{ margin-top:0; } }
+  @media (max-width:720px){ .trifires__grid{ grid-template-columns:1fr; gap:2rem; } .sect__mark,.sect__mark svg{ height:72px; } }
+
+  /* who — eligibility */
+  .who h2{ font-size:clamp(2.25rem,5vw,3.6rem); }
+  .elig{ list-style:none; margin:2.5rem 0 0; padding:0; max-width:62rem; }
+  .elig li{ display:grid; grid-template-columns:auto 1fr; gap:1.5rem; align-items:baseline;
+    padding:1.5rem 0; border-top:1px solid var(--flame-600); font-size:clamp(1.2rem,2.2vw,1.5rem);
+    font-weight:500; color:var(--bone-50); }
+  .elig li:last-child{ border-bottom:1px solid var(--flame-600); }
+  .elig .n{ font-family:var(--font-deco); font-size:clamp(1.5rem,3vw,2.1rem); color:var(--accent); }
+  .elig .lede-line{ font-weight:500; }
+  .who__note{ margin-top:1.75rem; font-style:italic; color:var(--bone-200); }
+
+  /* no-ai band — its own full-height statement screen */
+  .noai{ text-align:center; min-height:100vh; min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .noai h2{ font-size:clamp(2.25rem,6.5vw,5rem); line-height:0.95; }
+  .noai h2 .hot{ color:var(--flame-400); }
+  .noai p{ margin:1.75rem auto 0; color:var(--bone-200); max-width:58ch; }
+  .noai .stamp{ display:inline-block; margin-top:1.75rem; font-family:var(--font-display);
+    font-weight:700; text-transform:uppercase; letter-spacing:0.12em; font-size:0.8125rem;
+    color:var(--ochre-400); background:var(--ink-800); padding:0.5rem 0.9rem;
+    box-shadow:inset 0 0 0 2px var(--ochre-400); text-decoration:none; cursor:pointer;
+    transition:background-color var(--dur-hover,200ms) var(--ease-out), color var(--dur-hover,200ms) var(--ease-out), transform var(--dur-press,140ms) var(--ease-out); }
+  .noai a.stamp:hover{ background:var(--ochre-400); color:var(--ink-900); }
+  .noai a.stamp:active{ transform:scale(0.97); }
+  [data-ochre="off"] .noai a.stamp:hover{ background:var(--bone-50); color:var(--ink-900); }
+  [data-ochre="off"] .noai .stamp{ color:var(--bone-50); box-shadow:inset 0 0 0 2px var(--bone-50); }
+
+  /* pay */
+  .pay h2{ font-size:clamp(2.25rem,5vw,3.6rem); }
+  .pay__grid{ display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr); gap:3rem 4rem; align-items:start; margin-top:2.5rem; }
+  .pay table{ width:100%; border-collapse:collapse; }
+  .pay caption{ text-align:left; margin-bottom:1rem; font-family:var(--font-display); font-weight:600;
+    font-size:0.8125rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--tx2); }
+  .pay thead th{ text-align:left; padding:0.85rem 0; border-bottom:3px solid var(--rl);
+    font-family:var(--font-display); font-weight:600; font-size:0.8125rem; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--tx2); }
+  .pay thead th.r{ text-align:right; }
+  .pay tbody th{ text-align:left; padding:0.95rem 1rem 0.95rem 0; border-bottom:1px solid var(--tbl-line);
+    font-family:var(--font-body); font-weight:600; font-size:1.155rem; color:var(--tx); }
+  .pay tbody td{ text-align:right; padding:0.95rem 0; border-bottom:1px solid var(--tbl-line);
+    font-family:var(--font-display); font-weight:800; font-size:1.7rem; letter-spacing:0.01em; color:var(--turquoise-600); white-space:nowrap; }
+  .terms{ display:grid; gap:2.25rem; }
+  .terms h3{ font-family:var(--font-display); font-weight:600; font-size:0.9375rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--hd); margin:0 0 0.5rem; }
+  .terms p{ font-size:1.1875rem; line-height:1.6; font-weight:600; color:var(--tx2); margin:0; max-width:40ch; }
+
+  /* submit cta + how-to */
+  .submit h2{ font-size:clamp(2.25rem,5vw,3.6rem); color:var(--bone-50); }
+  .steps{ counter-reset:step; list-style:none; margin:2.5rem 0 0; padding:0; max-width:60ch; }
+  .steps li{ display:grid; grid-template-columns:auto 1fr; gap:1.25rem; align-items:baseline;
+    padding:1.1rem 0; border-top:1px solid var(--flame-600); font-size:1.15rem; color:var(--bone-50); }
+  .steps li::before{ counter-increment:step; content:counter(step,decimal-leading-zero);
+    font-family:var(--font-deco); font-size:1.6rem; color:var(--accent); }
+  .submit .deadline{ font-family:var(--font-display); font-weight:800; text-transform:uppercase;
+    font-size:clamp(1.5rem,3.5vw,2.25rem); color:var(--bone-50); margin:2.5rem 0 1.5rem; }
+
+  /* faq */
+  .faq__lede{ font-family:var(--font-body); font-size:clamp(1.15rem,1.7vw,1.3rem); line-height:1.6; color:var(--tx2); margin:1.5rem 0 0; max-width:52ch; }
+  .faq__list{ margin-top:2.75rem; border-top:3px solid var(--rl); }
+  .faq__item{ border-bottom:1px solid var(--tbl-line); }
+  .faq__item > summary{ list-style:none; cursor:pointer; display:flex; align-items:baseline; gap:1.5rem;
+    padding:1.5rem 0; font-family:var(--font-body); font-weight:600; font-size:clamp(1.2rem,2vw,1.5rem);
+    line-height:1.25; color:var(--hd); -webkit-tap-highlight-color:transparent; }
+  .faq__item > summary:hover{ color:var(--acc); }
+  .faq__item > summary::-webkit-details-marker{ display:none; }
+  .faq__item > summary:focus-visible{ outline-offset:4px; }
+  .faq__q{ flex:1; min-width:0; }
+  .faq__sign{ flex:none; width:1em; font-family:var(--font-display); font-weight:800; font-size:1.4em;
+    line-height:1; color:var(--acc); transform-origin:center; transition:transform var(--dur-ui,200ms) var(--ease-out); }
+  .faq__item[open] > summary .faq__sign{ transform:rotate(45deg); }
+  .faq__a{ font-family:var(--font-body); font-size:1.0625rem; line-height:1.62; color:var(--tx2);
+    margin:0 0 1.6rem; max-width:62ch; padding-left:calc(1em + 1.5rem); }
+  .faq__a strong{ color:var(--tx); font-weight:600; }
+  @media (prefers-reduced-motion: reduce){ .faq__sign{ transition:none; } }
+  @media (max-width:560px){ .faq__a{ padding-left:0; } }
+  .faq__cta{ display:flex; gap:1rem; flex-wrap:wrap; margin-top:2.5rem; }
+
+  /* footer */
+  .foot{ border-top:6px solid var(--flame-500); padding-block:clamp(2.75rem,5vw,3.75rem); }
+  .foot__top{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:2rem 3rem; align-items:start; }
+  .foot__mark{ font-family:var(--font-display); font-weight:900; font-size:clamp(2rem,4vw,2.75rem); line-height:1; color:var(--bone-50); display:block; }
+  .foot__tag{ font-family:var(--font-body); font-style:italic; font-size:1.15rem; line-height:1.35; color:var(--bone-200); margin:0.65rem 0 0; max-width:24ch; }
+  .foot__window{ margin-top:1.7rem; }
+  .foot .fkick{ font-family:var(--font-display); font-weight:600; text-transform:uppercase; letter-spacing:0.14em; font-size:0.8125rem; color:var(--ink-300); margin:0; }
+  .foot__dates{ font-family:var(--font-body); font-size:1.1rem; color:var(--bone-50); margin:0.35rem 0 0; }
+  .foot__email{ font-family:var(--font-body); font-size:1.1rem; color:var(--bone-50); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; display:inline-block; margin-top:0.35rem; }
+  .foot__email:hover{ color:var(--flame-400); }
+  .foot__rule{ border:0; border-top:1px solid var(--ink-700); margin:clamp(2rem,4vw,2.75rem) auto 1.4rem; }
+  .foot__legal{ font-family:var(--font-display); font-weight:600; font-size:0.8125rem; letter-spacing:0.07em; text-transform:uppercase; color:var(--ink-300); margin:0 auto; max-width:none; }
+  @media (max-width:560px){ .foot__top{ grid-template-columns:1fr; gap:1.75rem; } }
+  @media (max-width:620px){ .pay__grid{ grid-template-columns:1fr; } }
+
+  /* ============================================================
+     SET-PIECE 2 — the 1926 → 2026 lineage sequence (scroll-scrubbed)
+     Full-bleed flame poster; pinned stage; duotone public-domain plates.
+     ============================================================ */
+  .seq{ position:relative; height:480vh; background:var(--flame-700); color:var(--bone-50); }
+  .seq__stage{ position:sticky; top:0; height:100vh; overflow:hidden; }
+
+  /* full-bleed, scroll-changing artwork background */
+  .seq__bg{ position:absolute; inset:0; z-index:0; background:var(--ink-900); }
+  .seq__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    opacity:0; transition:opacity 600ms var(--ease-out); will-change:opacity;
+    filter:grayscale(1) contrast(1.05) brightness(1.02); }
+  .seq__img.on{ opacity:0.55; }
+  /* brand-flame tint over the artwork; a soft dark scrim keeps text legible */
+  .seq__tint{ position:absolute; inset:0; z-index:1; pointer-events:none;
+    background:
+      radial-gradient(120% 82% at 50% 46%, rgba(32,21,20,0.16), rgba(32,21,20,0.52) 100%),
+      rgba(194,23,37,0.80); }
+
+  /* centered vertical stack: eyebrow → enlarged numeral → one-line copy */
+  .seq__center{ position:absolute; inset:0; z-index:2; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center;
+    padding:0 clamp(1.5rem,5vw,5rem); text-shadow:0 2px 22px rgba(32,21,20,0.45); }
+  .seq__kick{ font-family:var(--font-display); font-weight:600; text-transform:uppercase;
+    letter-spacing:0.16em; font-size:0.8125rem; color:var(--ochre-400); margin:0; }
+  .seq__rule{ border:0; border-top:6px solid var(--ochre-400); width:3.25rem; margin:0.9rem auto 1.35rem; }
+  .seq__year{ display:flex; justify-content:center; gap:0.01em; font-family:var(--font-deco); font-weight:400; line-height:1;
+    height:1em; overflow:hidden; margin:0; font-size:clamp(6.3rem,18.2vw,15.4rem); color:var(--bone-50); letter-spacing:0.01em; }
+  .seq__year .win{ height:1em; overflow:hidden; }
+  .seq__year .strip{ display:flex; flex-direction:column; will-change:transform; }
+  .seq__year .cell{ height:1em; display:flex; align-items:center; justify-content:center; }
+  .seq__manifesto{ font-family:var(--font-body); white-space:nowrap; font-size:clamp(0.78rem,1.35vw,1.05rem);
+    line-height:1.4; color:var(--bone-50); margin:1.5rem 0 0; max-width:none; }
+  .seq__manifesto em{ font-style:italic; }
+
+  /* credit pinned bottom-right; swaps in sync with the background */
+  .seq__cap{ position:absolute; z-index:3; right:clamp(1.25rem,5vw,4rem); bottom:clamp(1.5rem,5vh,2.75rem);
+    font-family:var(--font-body); font-style:italic; font-size:0.9rem; line-height:1.45;
+    color:var(--bone-200); margin:0; max-width:34ch; text-align:right;
+    text-shadow:0 1px 10px rgba(32,21,20,0.55); }
+  .seq__cap::before{ content:""; display:block; width:2.5rem; height:3px; background:var(--ochre-400); margin:0 0 0.55rem auto; }
+  .seq__cap b{ font-style:normal; font-weight:600; color:var(--bone-50); }
+  .seq__track{ position:absolute; left:0; right:0; bottom:0; z-index:3; height:4px; background:rgba(249,242,237,0.18); }
+  .seq__track i{ display:block; height:100%; width:0%; background:var(--ochre-400); transition:width 120ms linear; }
+
+  @media (max-width:760px){
+    .seq{ height:360vh; }
+    .seq__year{ font-size:clamp(5rem,28vw,9rem); }
+    .seq__manifesto{ white-space:normal; text-wrap:pretty; font-size:1rem; max-width:34ch; }
+    .seq__cap{ left:clamp(1.25rem,5vw,4rem); max-width:none; font-size:0.8rem; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#the-call">Skip to the call</a>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" aria-label="Primary">
+  <div class="wrap">
+    <a class="nav__mark" href="#top" data-nav-home>FIRE!!!</a>
+    <div class="nav__links">
+      <a class="lnk" href="#the-call" aria-current="true">The Call</a>
+      <a class="lnk" href="#no-ai">No AI</a>
+      <a class="lnk" href="#who">Eligibility</a>
+      <a class="lnk" href="#the-work">The Work</a>
+      <a class="lnk" href="#submit" data-go-submit>Submit</a>
+      <a class="lnk" href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== LANDING ===================== -->
+<main id="view-landing">
+  <span id="top"></span>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="hero__mark reveal" style="--d:60ms">FIRE!!!</h1>
+      <p class="hero__tag reveal" style="--d:110ms">Devoted to Younger Black American Artists</p>
+      <div class="hero__dates reveal" style="--d:160ms">
+        <span class="lab">Call for Proposals</span>
+        <span class="val">June 15 to August 15, 2026</span>
+      </div>
+      <div class="hero__cta reveal" style="--d:210ms">
+        <a class="btn btn--primary btn--lg" href="#the-call">Read the Call</a>
+        <a class="btn btn--secondary btn--lg" href="#submit" data-go-submit>Submit a Proposal</a>
+      </div>
+    </div>
+  </header>
+  <svg class="saw" data-fill="ink" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 26"></svg>
+
+  <!-- THE CALL -->
+  <section class="band band--read call" id="the-call" aria-labelledby="call-h">
+    <div class="wrap opener">
+      <hr class="rule reveal">
+      <p class="kicker reveal">The Call</p>
+      <h2 class="display reveal" id="call-h" style="--d:40ms">One hundred years:<br>still, the fire burns.</h2>
+      <p class="lede reveal" style="--d:90ms">In 1926, Wallace Thurman, Langston Hughes, Zora Neale Hurston, and Aaron Douglas lit a match called <em>FIRE!!</em>, a journal by younger Black artists who refused to wait for permission.</p>
+      <p class="turn reveal" style="--d:130ms">It ran one issue. It changed everything.</p>
+      <p class="body reveal" style="--d:210ms">Now, we strike the match, one century later.<br><br><em>FIRE!!!</em> returns to publish twenty-one new pieces, paid, in the spirit of the original.<br><br>There are seats at this table for emerging Black American writers, poets, photographers, makers, and artists.</p>
+<div class="call-archive reveal" style="--d:250ms">
+        <figure class="plate">
+          <div class="plate__frame">
+            <img src="assets/fire-1926-cover.png" width="519" height="655" loading="lazy" alt="The original FIRE!! cover, 1926, designed by Aaron Douglas — a reclining sphinx and a profile silhouette in warm black against vermillion red.">
+          </div>
+          <figcaption class="plate__cap"><span class="no">№ 1</span> · FIRE!! · November 1926<br>Cover by Aaron Douglas · public domain</figcaption>
+        </figure>
+        <blockquote class="foreword">
+          <p>FIRE … flaming, burning, searing, and penetrating far beneath the superficial items of the flesh.</p>
+          <cite>Foreword · FIRE!! · 1926</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- SET-PIECE 2 — the 1926 → 2026 lineage sequence -->
+  <section class="seq" id="lineage-seq" aria-label="A century of the Black image, 1926 to 2026">
+    <div class="seq__stage">
+      <div class="seq__bg" aria-hidden="true">
+          <img class="seq__img on" src="assets/seq/plate-00.png" alt="FIRE!! No. 1 cover, designed by Aaron Douglas, 1926." loading="eager" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-01.jpg" alt="Juan de Pareja, by Diego Velázquez, 1650." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-02.jpg" alt="Yarrow Mamout, by Charles Willson Peale, 1819." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-03.jpg" alt="Toussaint Louverture, 19th century." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-04.jpg" alt="Dred Scott, by Louis Schultze, 1881." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-05.jpg" alt="Frederick Douglass, unknown artist, c. 1840s." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-06.jpg" alt="The Lord Is My Shepherd, by Eastman Johnson, 1863." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-07.jpg" alt="Portrait of a woman, by Eastman Johnson, c. 1867." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-08.jpg" alt="Ira Aldridge, 19th century." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-09.jpg" alt="James 'Jem' Wharton, by William Daniels, 19th century." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-10.jpg" alt="Mother of Henry O. Tanner, by Henry Ossawa Tanner, c. 1897." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-11.jpg" alt="Market Woman, by Thomas Waterman Wood, c. 1858." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-12.jpg" alt="Two Musicians, by Robert Lee MacCameron, c. 1900." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-13.jpg" alt="Anna Washington Derry, by Laura Wheeler Waring, 1927." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-14.jpg" alt="Girl in a Pink Dress, by Laura Wheeler Waring, c. 1920s." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-15.jpg" alt="Charles S. Johnson, by Winold Reiss, c. 1925." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-16.jpg" alt="Countee Cullen, by Winold Reiss, c. 1925." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-17.jpg" alt="Paul Robeson, by Winold Reiss, c. 1925." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-18.jpg" alt="Minnie, by William H. Johnson, c. 1930." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-19.jpg" alt="Little Girl, by William H. Johnson, c. 1944." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-20.jpg" alt="Young Pastry Cook, by William H. Johnson, c. 1930." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-21.jpg" alt="Jenny, by Dox Thrash, c. 1940." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-22.jpg" alt="Played Out, by Dox Thrash, c. 1939." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-23.jpg" alt="Harlem Street Scene, by Charles Henry Alston, c. 1930s." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-24.jpg" alt="The Savoy, by Dayton Brandfield, c. 1940." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-25.jpg" alt="Harlem WPA Street Dance, by Elizabeth Olds, c. 1940." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-26.jpg" alt="Spirituals, by Lillian Richter Reynolds, c. 1940." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-27.jpg" alt="Mulatto, by Aaron Douglas, c. 1925 — who designed the original 1926 FIRE!! cover." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-28.jpg" alt="The Crisis magazine cover, May 1927." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-29.jpg" alt="Poster for the film St. Louis Blues, with Bessie Smith, 1929." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-30.jpg" alt="Street Life, Harlem, by William H. Johnson, c. 1939." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-31.jpg" alt="Government Charwoman, by Gordon Parks, 1942." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-32.jpg" alt="Louis Armstrong, photographed by William P. Gottlieb, c. 1946." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-33.jpg" alt="A young child in Chicago, from the DOCUMERICA project, photographed by John H. White, 1973." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-34.jpg" alt="Study for God's Trombones, by Aaron Douglas, c. 1927." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-35.jpg" alt="Swing Low, Sweet Chariot, by Archibald Motley, 1934." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-36.jpg" alt="Zora Neale Hurston, photographed by Carl Van Vechten, 1938." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-37.jpg" alt="Booker T. Washington Monument, sculpted by Richmond Barthé, dedicated 1922." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-38.jpg" alt="Lobby card for Go Down, Death!, a Spencer Williams production, 1944." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-39.jpg" alt="Poster for The Negro Soldier, U.S. War Department, 1944." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-40.jpg" alt="Miles Davis, photographed by William P. Gottlieb, c. 1947." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-41.jpg" alt="The Crisis cover, by Frank Walts, October 1919." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-42.jpg" alt="Roadside store, Alabama, by Walker Evans for the FSA, 1936." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-43.jpg" alt="Let My People Go, by Aaron Douglas, c. 1939." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-44.jpg" alt="A painting by William H. Johnson, Smithsonian American Art Museum." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-45.jpg" alt="Ezekiel Saw the Wheel, by William H. Johnson, 1945." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-46.jpg" alt="Head of a Boy, bronze by Richmond Barthé, National Gallery of Art." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-47.jpg" alt="The Blackberry Woman, bronze by Richmond Barthé, 1932." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-48.jpg" alt="James L. Allen, Harlem Renaissance photographer, Harmon Foundation." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-49.jpg" alt="Langston Hughes, photographed by Carl Van Vechten, 1939." loading="lazy" decoding="async">
+          <img class="seq__img" src="assets/seq/plate-50.jpg" alt="Bessie Smith, photographed by Carl Van Vechten, 1936." loading="lazy" decoding="async">
+      </div>
+      <div class="seq__tint" aria-hidden="true"></div>
+      <div class="seq__center">
+        <p class="seq__kick">The Lineage · Roots to Revival</p>
+        <hr class="seq__rule">
+        <div class="seq__year" id="seq-year" aria-hidden="true"></div>
+        <p class="seq__manifesto">A century of the Black image: drawn, painted, photographed, and printed by human hands.<br><em>FIRE!!!</em> publishes in that unbroken line.</p>
+      </div>
+      <figcaption class="seq__cap" id="seq-cap"><b>FIRE!! — No. 1</b> · cover by Aaron Douglas, 1926 · Public domain</figcaption>
+      <div class="seq__track" aria-hidden="true"><i id="seq-bar"></i></div>
+    </div>
+  </section>
+
+  <!-- THREE FIRES -->
+  <section class="band band--read" id="three-fires" aria-label="Three sections, seven pieces each">
+    <div class="wrap">
+      <div class="trifires reveal">
+        <div class="trifires__head">
+          <p class="kicker">Three Sections · Seven Pieces Each</p>
+          <h3>One issue, three fires.</h3>
+        </div>
+        <p class="trifires__lede"><em>FIRE!!!</em> will publish artwork, essays, poetry, photography, conversations, and short stories organized around three themes: <strong>Politics, Culture, and Identity</strong>.<br><br>We believe these categories reflect the issues, ideas, and experiences that matter to Black Americans, how we navigate today’s political and cultural landscape, and how our identities shape how we see ourselves, our communities, and the world.</p>
+        <div class="trifires__grid">
+          <article class="sect">
+            <div class="sect__mark" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <polygon fill="currentColor" points="112,60 75.46,64.14 105.03,86 71.31,71.31 86,105.03 64.14,75.46 60,112 55.86,75.46 34,105.03 48.69,71.31 14.97,86 44.54,64.14 8,60 44.54,55.86 14.97,34 48.69,48.69 34,14.97 55.86,44.54 60,8 64.14,44.54 86,14.97 71.31,48.69 105.03,34 75.46,55.86"></polygon>
+              </svg>
+            </div>
+            <h4>Politics</h4>
+            <p>Organizing, economics, citizenship and the status of the Black political world.</p>
+            <p class="sect__topics">Topics may include voting rights, economic justice, education, housing, healthcare, technology, activism, public policy, and social movements — the everyday ways Black people engage power, resistance, and change.</p>
+          </article>
+          <article class="sect">
+            <div class="sect__mark" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <g stroke="currentColor" stroke-width="5">
+                  <circle cx="60" cy="60" r="53"></circle>
+                  <circle cx="60" cy="60" r="40"></circle>
+                  <circle cx="60" cy="60" r="27"></circle>
+                </g>
+                <circle cx="60" cy="60" r="10" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <h4>Culture</h4>
+            <p>Music, photography, film, art, performance, and the life of the Black American mind.</p>
+            <p class="sect__topics">Topics may include music, art, fashion, language, foodways, digital culture, sports, faith traditions, and community life — meaning, joy, and connection in a rapidly changing world.</p>
+          </article>
+          <article class="sect">
+            <div class="sect__mark" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <g stroke="currentColor" stroke-width="5">
+                  <circle cx="40" cy="60" r="34"></circle>
+                  <circle cx="80" cy="60" r="34"></circle>
+                </g>
+                <circle cx="60" cy="60" r="10" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <h4>Identity</h4>
+            <p>Black selfhood, lineage, belonging, and determination through who we say we are.</p>
+            <p class="sect__topics">Topics may include family, gender, sexuality, regional identity, class, spirituality, mental health, belonging, and memory — how Black people in the U.S. understand themselves and their place in the world.</p>
+          </article>
+        </div>
+        <div class="trifires__foot reveal">
+          <p class="trifires__coda">An essay about voting rights can sit alongside a poem about family memory, a photo essay on Black fashion, or a reflection on navigating Black identity online.</p>
+          <a class="btn btn--primary" href="assets/FIRE-Call-for-Proposals.pdf" download="FIRE!!! Call for Proposals.pdf" target="_blank" rel="noopener">Download the Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NO AI -->
+  <section class="band band--ink noai" id="no-ai" aria-labelledby="noai-h">
+    <div class="wrap">
+      <h2 class="display reveal" id="noai-h">Absolutely no AI.<br><span class="hot">Not in writing. Not in art.</span></h2>
+      <p class="reveal" style="--d:80ms">Every accepted piece is read and made by people.<br><em>FIRE!!!</em> publishes work made by human hands, voices, and minds. Nothing else.<br>We commission our art and draw on the public-domain 1926 issue.<br><em>We do not generate it.</em></p>
+      <a class="stamp reveal" style="--d:130ms" href="#faq">Human-made, always.</a>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section class="band band--deep who" id="who" aria-labelledby="who-h">
+    <div class="wrap opener">
+      <hr class="rule reveal">
+      <p class="kicker reveal">Eligibility</p>
+      <h2 class="display reveal" id="who-h" style="--d:40ms">Who we're looking for</h2>
+      <ul class="elig">
+        <li class="reveal" style="--d:90ms"><span class="n" aria-hidden="true">01</span><span class="lede-line">Black or African American artists, in the tradition of the original <em>FIRE!!</em>.<br>A.K.A., the direct descendants of African people enslaved in the United States.</span></li>
+        <li class="reveal" style="--d:140ms"><span class="n" aria-hidden="true">02</span><span>Ages 18 to 35.</span></li>
+        <li class="reveal" style="--d:190ms"><span class="n" aria-hidden="true">03</span><span>Your submitted work must be original and previously unpublished.<br>It cannot have appeared in any magazine, journal, book, newspaper, or exhibition.</span></li>
+        <li class="reveal" style="--d:240ms"><span class="n" aria-hidden="true">04</span><span>One piece per submission — but you may enter more than one work, each submitted separately.</span></li>
+      </ul>
+      <p class="who__note reveal" style="--d:280ms">Each section also carries one donated piece from an established voice in support of the cause.</p>
+    </div>
+  </section>
+  <svg class="saw saw--flip" data-fill="flame" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 26"></svg>
+
+  <!-- THE WORK / PAY -->
+  <section class="band band--read pay" id="the-work" aria-labelledby="pay-h">
+    <div class="wrap">
+      <div class="opener">
+        <hr class="rule reveal">
+        <p class="kicker reveal">The Work</p>
+        <h2 class="display reveal" id="pay-h" style="--d:40ms">What we're publishing. What we pay.</h2>
+      </div>
+      <p class="reveal" style="--d:80ms; margin-top:1.25rem; color:var(--tx);">Seven pieces in each of three sections: <strong>Politics, Culture, and Identity.</strong><br>Rates are per accepted piece, paid plainly and proudly.</p>
+      <div class="pay__grid">
+        <div class="reveal" style="min-width:0">
+          <table>
+            <caption>Rates per accepted piece, per section</caption>
+            <thead><tr><th scope="col">Form</th><th scope="col" class="r">Rate</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Short Story</th><td>$500</td></tr>
+              <tr><th scope="row">Essay</th><td>$600</td></tr>
+              <tr><th scope="row">Photography or Photo Essay</th><td>$500</td></tr>
+              <tr><th scope="row">Art Piece</th><td>$500</td></tr>
+              <tr><th scope="row">Conversation, Roundtable,<br>or Interview</th><td>$600</td></tr>
+              <tr><th scope="row">Poem</th><td>$200</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="terms reveal" style="--d:80ms">
+          <div><h3>When you're paid</h3><p>25% on acceptance, once your proposal is in and the agreement is signed. The remaining 75% when editing is complete.</p></div>
+          <div><h3>Roundtables</h3><p>Group conversations pay <span class="usd">$300</span> per participant.</p></div>
+          <div><h3>Your rights</h3><p>For multimedia work, television and film rights are split 50/50 between you and <em>FIRE!!!</em>.</p></div>
+          <div><h3>Donated pieces</h3><p>One piece per section is donated by an established voice as a gift to the issue, not a paid slot.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <svg class="saw" data-fill="flame" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 26"></svg>
+
+  <!-- SUBMIT CTA / HOW TO -->
+  <section class="band band--deep submit" id="submit" aria-labelledby="submit-h">
+    <div class="wrap opener">
+      <hr class="rule reveal">
+      <p class="kicker reveal">Proposals</p>
+      <h2 class="display reveal" id="submit-h" style="--d:40ms">How to submit</h2>
+      <ol class="steps">
+        <li class="reveal" style="--d:90ms"><span>Choose your section:<br><strong>Politics, Culture, or Identity,</strong> and the form your piece will take.</span></li>
+        <li class="reveal" style="--d:140ms"><span>Write a short proposal. <em>Please include:</em><br><strong>A)</strong> Who you are;<br><strong>B)</strong> What you're making;<br><strong>C)</strong> Why it belongs in <em>FIRE!!!</em>;<br><strong>D)</strong> Link to a sample</span></li>
+        <li class="reveal" style="--d:190ms"><span>Submit <em>before</em> the deadline. <strong>One piece per submission</strong> — submit additional works separately.</span></li>
+      </ol>
+      <p class="deadline reveal" style="--d:230ms">Deadline · August 15, 2026</p>
+      <div class="reveal" style="--d:260ms">
+        <button class="btn btn--primary btn--lg" type="button" data-go-submit>Submit a Proposal</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <svg class="saw saw--flip" data-fill="flame" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 26"></svg>
+  <section class="band band--read faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap opener">
+      <hr class="rule reveal">
+      <p class="kicker reveal">The Frequently Asked</p>
+      <h2 class="display reveal" id="faq-h" style="--d:40ms">Questions, answered.</h2>
+      <p class="faq__lede reveal" style="--d:80ms">Straight answers, before you spend your afternoon on a proposal.</p>
+
+      <div class="faq__list">
+        <details class="faq__item reveal" style="--d:120ms" open>
+          <summary><span class="faq__q">Do I need a finished piece to apply?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">No. Send a short proposal: a few sentences on who you are, what you're making, and why it belongs in <em>FIRE!!!</em>, plus a link to a work sample.<br><br>If we accept, you'll make the piece on a short editorial timeline.<br><br><strong>Please, do not send a finished manuscript.</strong></p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:160ms">
+          <summary><span class="faq__q">Is there a fee to submit?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">No. Submitting is free, and every accepted piece is paid.<br><br><strong>We pay you to publish. You never pay us.</strong></p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:200ms">
+          <summary><span class="faq__q">Can I submit to more than one section?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">Yes. Each submission is a single piece, but you're welcome to enter more than one — just submit each work separately.<br><br>For every piece, choose the section (Politics, Culture, or Identity) and the art form that best fit it.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:240ms">
+          <summary><span class="faq__q">I've already been published. Can I still apply?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">Yes. We prioritize unpublished voices, but prior work doesn't disqualify you.<br><br>The piece you propose must be original, new, and previously unpublished so <em>FIRE!!!</em> runs it first.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:280ms">
+          <summary><span class="faq__q">When and how do I get paid?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">Rates are per accepted piece, ranging from <span class="usd">$200</span> for a poem to <span class="usd">$600</span> for an essay or two-person conversation. You receive <strong>25% within 14 days of signing the agreement</strong> — non-refundable — and the remaining <strong>75% within 30 days of editorial completion</strong>. Roundtables pay each participant.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:320ms">
+          <summary><span class="faq__q">What rights do I keep?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">You grant <em>FIRE!!!</em> an exclusive license for 36 months from first publication. After that, rights revert to you automatically. Film and television rights are negotiated per piece.<br><br><strong>Your work is yours unless we agree otherwise.</strong><br><br>We keep the right to leave your piece in the complete issue and archive.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:360ms">
+          <summary><span class="faq__q">How strict is the "no-AI" rule, really?</span><span class="faq__sign" aria-hidden="true">+</span></summary>
+          <p class="faq__a">The rule is absolute for all approved <em>FIRE!!!</em> submissions.<br><br>Not in the writing, not in the art, not in the research behind it. Every piece is vetted by people. Using AI in your submission ends the agreement on the spot: the work is pulled and the rights return to you.<br><br><strong>This is non-negotiable.</strong></p>
+        </details>
+      </div>
+      <div class="faq__cta reveal">
+        <a class="btn btn--primary" href="assets/FIRE-Call-for-Proposals.pdf" download="FIRE!!! Call for Proposals.pdf" target="_blank" rel="noopener">Download the Call</a>
+        <button class="btn btn--secondary" type="button" data-go-submit>Submit a Proposal</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <svg class="saw" data-fill="ink" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1200 26"></svg>
+  <footer class="band--ink foot" id="colophon">
+    <div class="wrap foot__top">
+      <div class="foot__brand">
+        <span class="foot__mark">FIRE!!!</span>
+        <p class="foot__tag">Devoted to Younger<br>Black American Artists.</p>
+        <div class="foot__window">
+          <p class="fkick">Submission Window</p>
+          <p class="foot__dates">June 15 to August 15, 2026</p>
+        </div>
+      </div>
+      <div class="foot__submit">
+        <p class="fkick">Submit</p>
+        <a class="foot__email" href="#submit" data-go-submit>Submit a Proposal</a>
+        <p class="fkick" style="margin-top:1.6rem">Questions &amp; Media</p>
+        <a class="foot__email" href="/cdn-cgi/l/email-protection#a3d0d6c1cecad0d0cacccdd0e3c5cad1c6cec2c48dccd1c4"><span class="__cf_email__" data-cfemail="c8bbbdaaa5a1bbbba1a7a6bb88aea1baada5a9afe6a7baaf">[email&#160;protected]</span></a>
+      </div>
+    </div>
+    <hr class="wrap foot__rule">
+    <p class="wrap foot__legal">Politics + Culture + Identity · © 2026 FIRE!!! Magazine</p>
+  </footer>
+</main>
+
+<!-- ===================== SUBMIT FORM ===================== -->
+<style>
+  #view-submit{ --field-bg:var(--bone-100); min-height:100vh; }
+  [data-surface="drenched"] #view-submit{ --field-bg:var(--flame-800); }
+  .form-wrap{ width:min(40rem,100% - 3rem); margin-inline:auto; padding:clamp(2.25rem,6vw,3.75rem) 0 5rem; }
+  .back-link{ background:none; border:none; cursor:pointer; padding:0; margin-bottom:1.5rem; white-space:nowrap;
+    font-family:var(--font-display); font-weight:600; text-transform:uppercase; letter-spacing:0.14em;
+    font-size:0.8125rem; color:var(--acc); }
+  .form-wrap h2{ color:var(--hd); margin:0.4rem 0 0; }
+  .form-wrap .stand{ font-family:var(--font-body); font-size:1.2rem; line-height:1.5; color:var(--tx); margin:1rem 0 0; max-width:46ch; }
+  form.cfp{ margin-top:2.5rem; }
+  .field{ margin-bottom:1.5rem; }
+  .field > label, .field > .leg{ display:flex; align-items:baseline; gap:0.35rem; font-family:var(--font-display); font-weight:600;
+    text-transform:uppercase; letter-spacing:0.14em; font-size:0.8125rem; color:var(--tx); margin-bottom:0.55rem; padding:0; }
+  .field .req{ color:var(--acc); white-space:nowrap; }
+  .field input, .field textarea{ width:100%; font-family:var(--font-body); font-size:1.125rem;
+    padding:0.7rem 0.6rem; background:var(--field-bg); color:var(--tx);
+    border:none; border-bottom:2px solid var(--rl); border-radius:0; }
+  .field textarea{ resize:vertical; min-height:7rem; line-height:1.55; }
+  .field input::placeholder, .field textarea::placeholder{ color:var(--tx2); opacity:0.8; }
+  .field input:focus, .field textarea:focus{ outline:3px solid var(--ochre-500); outline-offset:2px; }
+  .field .msg{ font-family:var(--font-body); font-size:0.9rem; margin:0.4rem 0 0; color:var(--tx2); }
+  .field.err input, .field.err textarea{ border-bottom:3px solid var(--flame-600); }
+  [data-surface="drenched"] .field.err input, [data-surface="drenched"] .field.err textarea{ border-bottom-color:var(--ochre-400); }
+  .field.err .msg{ color:var(--flame-600); }
+  [data-surface="drenched"] .field.err .msg{ color:var(--ochre-400); }
+  .seg{ display:flex; gap:0.75rem; flex-wrap:wrap; border:none; margin:0; padding:0; }
+  .seg button{ display:inline-flex; align-items:center; justify-content:center; text-align:center;
+    font-family:var(--font-display); font-weight:700; text-transform:uppercase; letter-spacing:0.07em;
+    font-size:0.85rem; line-height:1.12; padding:0.6rem 1.15rem; min-height:48px; cursor:pointer; border-radius:0;
+    border:3px solid var(--rl); background:transparent; color:var(--tx); }
+  .seg button[aria-pressed="true"]{ background:var(--rl); color:var(--ground,var(--bone-50)); }
+  [data-surface="drenched"] .seg button[aria-pressed="true"]{ color:var(--flame-700); }
+  .attest{ display:flex; gap:0.85rem; align-items:flex-start; margin:0.5rem 0 1.75rem;
+    padding:1.1rem 1.2rem; background:var(--field-bg); border-left:0; box-shadow:inset 0 0 0 2px var(--rl); }
+  .attest input{ width:22px; height:22px; margin-top:0.2rem; flex:none; accent-color:var(--flame-600); }
+  .attest label{ font-family:var(--font-body); font-size:1rem; line-height:1.5; color:var(--tx); }
+  .attest .strong{ font-weight:600; }
+  .form-actions{ display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap; margin-top:0.5rem; }
+  .form-actions .note{ font-family:var(--font-body); font-style:italic; font-size:0.95rem; color:var(--tx2); }
+  .hp{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; opacity:0; }
+  .after-note{ margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--tbl-line,var(--flame-600));
+    font-family:var(--font-body); font-size:0.95rem; line-height:1.55; color:var(--tx2); max-width:54ch; }
+  .attest.err{ box-shadow:inset 0 0 0 3px var(--flame-600); }
+  [data-surface="drenched"] .attest.err{ box-shadow:inset 0 0 0 3px var(--ochre-400); }
+  p.msg.flame-err{ color:var(--flame-600); }
+  [data-surface="drenched"] p.msg.flame-err{ color:var(--ochre-400); }
+  /* closed / busy: the design system's disabled-button treatment */
+  .btn:disabled, .btn--closed{ opacity:0.45; cursor:not-allowed; pointer-events:none; }
+  /* inline note + eligibility checklist */
+  .form-note{ font-family:var(--font-body); font-style:italic; font-size:1rem; line-height:1.5; color:var(--tx2); margin:0.75rem 0 0; max-width:50ch; }
+  fieldset[data-field="elig"] .attest{ margin:0 0 0.65rem; }
+  fieldset[data-field="elig"] .attest:last-of-type{ margin-bottom:0; }
+  fieldset[data-field="elig"].err .attest{ box-shadow:inset 0 0 0 3px var(--flame-600); }
+  [data-surface="drenched"] fieldset[data-field="elig"].err .attest{ box-shadow:inset 0 0 0 3px var(--ochre-400); }
+  #f-elig-msg{ margin-top:0.75rem; }
+</style>
+<section class="band band--read" id="view-submit" hidden aria-labelledby="form-h">
+  <div class="form-wrap">
+    <button class="back-link" type="button" data-nav-home>← Back to the call</button>
+    <hr class="rule" style="color:var(--rl)">
+    <p class="kicker" style="color:var(--tx2); padding-top:0.75rem">Call for Proposals</p>
+    <h2 class="display" id="form-h" style="font-size:clamp(2.25rem,5vw,3.25rem)">Submit a Proposal</h2>
+    <p class="stand"><em>Tell us about the fire you want to set for the world.</em></p>
+    <p class="form-note">One piece per submission — submit additional works separately. Please do not send a finished manuscript.</p>
+
+    <form class="cfp" method="POST" action="__REPLACE_ME__" accept-charset="UTF-8">
+      <div class="field" data-field="name">
+        <label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-msg">
+        <p class="msg" id="f-name-msg"></p>
+      </div>
+
+      <div class="field" data-field="email">
+        <label for="f-email">Your email <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-msg">
+        <p class="msg" id="f-email-msg">We reply here. No newsletter, no resale.</p>
+      </div>
+
+      <fieldset class="field" data-field="section" style="border:none">
+        <legend class="leg">Section <span class="req" aria-hidden="true">*</span></legend>
+        <div class="seg" role="group" aria-label="Choose a section">
+          <button type="button" data-section aria-pressed="true">Politics</button>
+          <button type="button" data-section aria-pressed="false">Culture</button>
+          <button type="button" data-section aria-pressed="false">Identity</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="field" data-field="form" style="border:none">
+        <legend class="leg">Form or genre</legend>
+        <div class="seg" role="group" aria-label="Choose a form or genre">
+          <button type="button" data-form aria-pressed="false">Short Story</button>
+          <button type="button" data-form aria-pressed="false">Essay</button>
+          <button type="button" data-form aria-pressed="false">Photographic essay</button>
+          <button type="button" data-form aria-pressed="false">Art Piece</button>
+          <button type="button" data-form aria-pressed="false">Conversation / Roundtable / Interview</button>
+          <button type="button" data-form aria-pressed="false">Poetry</button>
+        </div>
+        <p class="msg" id="f-form-msg">What shape will your piece take?</p>
+      </fieldset>
+
+      <div class="field" data-field="about">
+        <label for="f-about">Who you are <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="f-about" name="about_you" required aria-describedby="f-about-msg" placeholder="A few lines on who you are and the work you make."></textarea>
+        <p class="msg" id="f-about-msg">Tell us about yourself — your voice, your eye, your practice.</p>
+      </div>
+
+      <div class="field" data-field="making">
+        <label for="f-making">What you're making <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="f-making" name="what_making" required aria-describedby="f-making-msg" placeholder="The piece you propose for FIRE!!! — its shape and subject."></textarea>
+        <p class="msg" id="f-making-msg">A few sentences is plenty. Please, do not send a finished manuscript.</p>
+      </div>
+
+      <div class="field" data-field="why">
+        <label for="f-why">Why it belongs in <em>FIRE!!!</em> <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="f-why" name="why_fire" required aria-describedby="f-why-msg" placeholder="How your piece speaks to Politics, Culture, or Identity."></textarea>
+        <p class="msg" id="f-why-msg">What makes this the right home for your work?</p>
+      </div>
+
+      <div class="field" data-field="sample">
+        <label for="f-sample">Link to a work sample <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-sample" name="work_sample" type="url" inputmode="url" required placeholder="https://…" aria-describedby="f-sample-msg">
+        <p class="msg" id="f-sample-msg">A portfolio, a page, or a clip — anywhere we can see your work.</p>
+      </div>
+
+      <fieldset class="field" data-field="elig" style="border:none">
+        <legend class="leg">Eligibility <span class="req" aria-hidden="true">*</span></legend>
+        <div class="attest">
+          <input id="f-elig-descendant" name="confirm_descendant" type="checkbox" required>
+          <label for="f-elig-descendant">I am a Black / African American artist — a direct descendant of African people enslaved in the United States.</label>
+        </div>
+        <div class="attest">
+          <input id="f-elig-age" name="confirm_age" type="checkbox" required>
+          <label for="f-elig-age">I am between 18 and 35 years old.</label>
+        </div>
+        <div class="attest">
+          <input id="f-elig-unpublished" name="confirm_unpublished" type="checkbox" required>
+          <label for="f-elig-unpublished">This work is original and previously unpublished.</label>
+        </div>
+        <div class="attest">
+          <input id="f-elig-human" name="human_made" type="checkbox" required>
+          <label for="f-elig-human"><span class="strong">This work is human-made</span> — no AI in the writing or the art.</label>
+        </div>
+        <p class="msg" id="f-elig-msg"></p>
+      </fieldset>
+
+      <!-- honeypot: hidden from people, catches bots -->
+      <div class="hp" aria-hidden="true" tabindex="-1">
+        <label for="f-company">Leave this field empty</label>
+        <input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <!-- stamped on page load; the backend rejects submissions completed in under ~2s -->
+      <input type="hidden" name="form_loaded_at" id="f-loaded-at" value="" autocomplete="off">
+      <!-- mirrors of the segmented choosers so they POST with the form (incl. the no-JS fallback default) -->
+      <input type="hidden" name="section" id="f-section-val" value="Politics">
+      <input type="hidden" name="piece_form" id="f-piece-val" value="">
+
+      <div class="form-actions">
+        <button class="btn btn--flame btn--lg" type="submit">Submit</button>
+        <span class="note">Deadline · August 15, 2026</span>
+      </div>
+      <p class="msg flame-err" id="f-submit-msg" role="alert" hidden style="margin:0.85rem 0 0"></p>
+
+      <p class="after-note">After you send it: we read every proposal by human hand.<br>If it moves us, you'll hear from us within four to six weeks.<br>If you don't, the fire is still yours: keep making.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== CONFIRMATION ===================== -->
+<style>
+  #view-confirm{ position:relative; overflow:hidden; }
+</style>
+<section class="band--flame" id="view-confirm" hidden aria-labelledby="confirm-h" style="min-height:100vh; display:flex; align-items:center; padding:4rem 0;">
+  <div class="wrap" style="max-width:44rem">
+    <p class="kicker" style="color:var(--ink-900)">Proposal received</p>
+    <h1 class="display" id="confirm-h" style="font-size:clamp(3.25rem,11vw,6.5rem); border-top:6px solid var(--ink-900); padding-top:1.25rem; margin-top:0.5rem">The match is struck.</h1>
+    <p style="font-family:var(--font-body); font-size:1.3rem; line-height:1.5; color:var(--ink-900); max-width:46ch; margin-top:1.75rem; white-space:pre-line" id="confirm-body">Thank you. Your proposal is in.</p>
+    <p style="font-family:var(--font-body); font-style:italic; font-size:1.05rem; color:var(--ink-900); margin-top:1.25rem">We read every submission by human hand.<br>If it moves us, you'll hear from us within four to six weeks.</p>
+    <p style="font-family:var(--font-body); font-size:0.95rem; color:var(--ink-900); margin-top:1rem">A confirmation email is on its way to your inbox.</p>
+    <div style="margin-top:2.5rem">
+      <button class="btn btn--secondary btn--lg" type="button" data-nav-home>Back to the call</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TWEAKS PANEL ===================== -->
+<style>
+  [data-hero="s"]{ --mast-max:11rem; --mast-vw:15vw; }
+  [data-hero="m"]{ --mast-max:16rem; --mast-vw:19vw; }
+  [data-hero="l"]{ --mast-max:21rem; --mast-vw:23vw; }
+  .twk{ position:fixed; right:16px; bottom:16px; z-index:2147483646; width:230px;
+    background:var(--bone-50); color:var(--ink-900); border:3px solid var(--ink-900);
+    font-family:var(--font-display); box-shadow:8px 8px 0 rgba(32,21,20,0.25); }
+  .twk__hd{ display:flex; align-items:center; justify-content:space-between; cursor:move;
+    padding:0.6rem 0.5rem 0.6rem 0.9rem; background:var(--ink-900); color:var(--bone-50); }
+  .twk__hd b{ font-weight:700; text-transform:uppercase; letter-spacing:0.14em; font-size:0.8125rem; }
+  .twk__x{ appearance:none; border:none; background:none; color:var(--bone-50); cursor:pointer;
+    font-size:0.95rem; line-height:1; width:26px; height:26px; }
+  .twk__body{ padding:0.85rem 0.9rem 1rem; }
+  .twk__sect{ font-weight:700; text-transform:uppercase; letter-spacing:0.1em; font-size:0.6875rem;
+    color:var(--ink-700); margin:0.85rem 0 0.4rem; }
+  .twk__sect:first-child{ margin-top:0; }
+  .seg2{ display:flex; gap:0; border:2px solid var(--ink-900); }
+  .seg2 button{ flex:1; appearance:none; border:none; border-left:2px solid var(--ink-900);
+    background:var(--bone-50); color:var(--ink-900); cursor:pointer; padding:0.5rem 0.3rem;
+    font-family:var(--font-display); font-weight:700; text-transform:uppercase; letter-spacing:0.06em;
+    font-size:0.6875rem; line-height:1; }
+  .seg2 button:first-child{ border-left:none; }
+  .seg2 button[aria-pressed="true"]{ background:var(--flame-600); color:var(--bone-50); }
+</style>
+<aside class="twk" id="tweaks" hidden aria-label="Tweaks">
+  <div class="twk__hd" data-twk-drag><b>Tweaks</b><button class="twk__x" type="button" data-twk-close aria-label="Close tweaks">✕</button></div>
+  <div class="twk__body">
+    <div class="twk__sect">Surface strategy</div>
+    <div class="seg2" data-twk="surface">
+      <button type="button" data-val="committed">Committed</button>
+      <button type="button" data-val="drenched">Drenched</button>
+    </div>
+    <div class="twk__sect">Hero masthead</div>
+    <div class="seg2" data-twk="hero">
+      <button type="button" data-val="s">Tight</button>
+      <button type="button" data-val="m">Default</button>
+      <button type="button" data-val="l">Big</button>
+    </div>
+    <div class="twk__sect">Ochre / gold accent</div>
+    <div class="seg2" data-twk="ochre">
+      <button type="button" data-val="on">On</button>
+      <button type="button" data-val="off">Off</button>
+    </div>
+  </div>
+</aside>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function () {
+  "use strict";
+
+  /* ============================================================
+     SUBMISSION ENDPOINT — the ONE value to set before you go live.
+     ------------------------------------------------------------
+     Paste your form-handler URL between the quotes below. The form
+     POSTs here (multipart/form-data via fetch, with an
+     `Accept: application/json` header) and also falls back to a
+     native POST to the same URL when JavaScript is off.
+
+     Works as-is with any standard handler. Pick one:
+       • Formspree  → https://formspree.io/f/XXXXXXXX
+       • Basin      → https://usebasin.com/f/XXXXXXXX
+       • Google Apps Script web app → https://script.google.com/macros/s/XXXX/exec
+
+     Autoresponder + delivery to submissions@firemag.org:
+       • Formspree: Form → Settings → add submissions@firemag.org as a
+         recipient, and enable “Autoresponse” so the submitter gets a
+         confirmation email (their address arrives in the `email` field).
+       • Basin: Form → Settings → Notifications → send to
+         submissions@firemag.org; turn on “Autoresponder”.
+       • Apps Script: in your doPost(e), MailApp.sendEmail to
+         submissions@firemag.org (the new proposal) and to
+         e.parameter.email (the confirmation).
+
+     DO NOT paste API keys, tokens, or any private address here — a
+     handler URL is the only thing that belongs in this file. Keep
+     real credentials in the handler's own dashboard/server.
+     ============================================================ */
+  const SUBMIT_ENDPOINT = "https://script.google.com/macros/s/AKfycbzA9ndKZUqLkBd9o1ztAQn1WO6eG2uLGZLLrPJgy_2C1cL8nixNoq3TiB2HHpHCfqaL/exec";
+
+  var root = document.documentElement;
+
+  /* ---------- sawtooth path builder ---------- */
+  function buildSaw(svg) {
+    var teeth = 40, w = 1200, h = 26, half = h / 2, step = w / teeth;
+    var d = "M0 " + h + " L0 " + half;
+    for (var i = 0; i < teeth; i++) { var x0 = i * step; d += " L" + (x0 + step / 2) + " 0 L" + (x0 + step) + " " + half; }
+    d += " L" + w + " " + h + " Z";
+    var fillMap = { ink: "var(--ink-900)", flame: "var(--flame-500)", bone: "var(--bone-50)", deep: "var(--flame-700)" };
+    var p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", d);
+    p.setAttribute("fill", fillMap[svg.getAttribute("data-fill")] || "var(--ink-900)");
+    svg.appendChild(p);
+  }
+  document.querySelectorAll("svg.saw").forEach(buildSaw);
+
+  /* ---------- reveal on scroll ---------- */
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---------- view switching ---------- */
+  var views = {
+    landing: document.getElementById("view-landing"),
+    submit: document.getElementById("view-submit"),
+    confirm: document.getElementById("view-confirm")
+  };
+  var nav = document.querySelector(".nav");
+  function show(name, focusSel) {
+    Object.keys(views).forEach(function (k) { views[k].hidden = (k !== name); });
+    nav.style.display = (name === "landing") ? "" : "none";
+    window.scrollTo(0, 0);
+    if (focusSel) { var el = document.querySelector(focusSel); if (el) el.focus(); }
+  }
+  document.addEventListener("click", function (e) {
+    var sub = e.target.closest("[data-go-submit]");
+    if (sub) { e.preventDefault(); show("submit", "#f-name"); return; }
+    var home = e.target.closest("[data-nav-home]");
+    if (home) { e.preventDefault(); show("landing"); return; }
+  });
+
+  /* ---------- segmented choosers (section + form/discipline) ---------- */
+  function syncSegments() {
+    var map = { "data-section": "f-section-val", "data-form": "f-piece-val" };
+    Object.keys(map).forEach(function (attr) {
+      var input = document.getElementById(map[attr]); if (!input) return;
+      var on = document.querySelector("[" + attr + '][aria-pressed="true"]');
+      input.value = on ? on.textContent.trim() : "";
+    });
+  }
+  function wireGroup(sel) {
+    var btns = document.querySelectorAll(sel);
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+        b.setAttribute("aria-pressed", "true");
+        syncSegments();
+      });
+    });
+  }
+  wireGroup("[data-section]");
+  wireGroup("[data-form]");
+  syncSegments();
+
+  /* ---------- form validation ---------- */
+  var form = document.querySelector("form.cfp");
+  /* single source of truth for where the proposal is delivered */
+  if (form) form.setAttribute("action", SUBMIT_ENDPOINT);
+  function setErr(field, msg) {
+    var wrap = form.querySelector('[data-field="' + field + '"]');
+    if (!wrap) return;
+    wrap.classList.toggle("err", !!msg);
+    var m = document.getElementById("f-" + field + "-msg");
+    if (m && msg) m.innerHTML = msg;
+    if (m) m.classList.toggle("flame-err", !!msg);
+  }
+  var DEFAULT_MSG = {
+    email: "We reply here. No newsletter, no resale.",
+    form: "What shape will your piece take?",
+    about: "Tell us about yourself — your voice, your eye, your practice.",
+    making: "A few sentences is plenty. Please, do not send a finished manuscript.",
+    why: "What makes this the right home for your work?",
+    sample: "A portfolio, a page, or a clip — anywhere we can see your work.",
+    elig: ""
+  };
+  function clearErr(field) { setErr(field, null); var m = document.getElementById("f-" + field + "-msg"); if (m && field in DEFAULT_MSG) m.innerHTML = DEFAULT_MSG[field]; }
+  ["name", "email", "about", "making", "why", "sample"].forEach(function (f) {
+    var input = form.querySelector("#f-" + f);
+    if (input) input.addEventListener("input", function () { clearErr(f); });
+  });
+  form.querySelectorAll('[data-field="elig"] input[type="checkbox"]').forEach(function (cb) {
+    cb.addEventListener("change", function () { clearErr("elig"); });
+  });
+
+  function validUrl(v) { try { var u = new URL(v); return u.protocol === "http:" || u.protocol === "https:"; } catch (err) { return false; } }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (form.querySelector("#f-company").value) return; /* honeypot tripped: silently drop */
+    var loadedAt = parseInt(form.querySelector("#f-loaded-at").value, 10);
+    if (loadedAt && Date.now() - loadedAt < 2000) return; /* completed too fast: silently drop */
+    var name = form.querySelector("#f-name").value.trim();
+    var email = form.querySelector("#f-email").value.trim();
+    var about = form.querySelector("#f-about").value.trim();
+    var making = form.querySelector("#f-making").value.trim();
+    var why = form.querySelector("#f-why").value.trim();
+    var sample = form.querySelector("#f-sample").value.trim();
+    var eligBoxes = form.querySelectorAll('[data-field="elig"] input[type="checkbox"]');
+    var eligAll = Array.prototype.every.call(eligBoxes, function (cb) { return cb.checked; });
+    var section = (form.querySelector('[data-section][aria-pressed="true"]') || {}).textContent || "Culture";
+
+    var ok = true;
+    if (!name) { setErr("name", "Tell us your name."); ok = false; } else clearErr("name");
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setErr("email", "Add a full email so we can reply to you."); ok = false; } else clearErr("email");
+    if (!about) { setErr("about", "Tell us who you are."); ok = false; } else clearErr("about");
+    if (!making) { setErr("making", "Tell us what you want to make."); ok = false; } else clearErr("making");
+    if (!why) { setErr("why", "Tell us why it belongs in FIRE!!!."); ok = false; } else clearErr("why");
+    if (!sample) { setErr("sample", "Add a link to a work sample."); ok = false; }
+    else if (!validUrl(sample)) { setErr("sample", "Use a full link, starting with http:// or https://."); ok = false; }
+    else clearErr("sample");
+    if (!eligAll) { setErr("elig", "Please confirm all four to submit — they’re the ground we stand on."); ok = false; } else clearErr("elig");
+
+    if (!ok) { var firstErr = form.querySelector(".err input, .err textarea"); if (firstErr && firstErr.focus) firstErr.focus(); return; }
+
+    /* Build the POST body with the EXACT keys the Apps Script doPost(e) reads
+       from e.parameter. The visible form fields keep their own names; we only
+       remap the keys sent in the request. Sent form-encoded (not JSON) so
+       e.parameter is populated. */
+    var params = new URLSearchParams();
+    params.set("name", name);
+    params.set("email", email);
+    params.set("section", section);
+    params.set("discipline", form.querySelector("#f-piece-val").value || "");
+    params.set("who", about);
+    params.set("making", making);
+    params.set("why", why);
+    params.set("sample", sample);
+    params.set("_gotcha", form.querySelector("#f-company").value || "");
+    /* eligibility confirmations carried along so the record is complete (script ignores extra keys) */
+    params.set("confirm_descendant", form.querySelector("#f-elig-descendant").checked ? "yes" : "");
+    params.set("confirm_age", form.querySelector("#f-elig-age").checked ? "yes" : "");
+    params.set("confirm_unpublished", form.querySelector("#f-elig-unpublished").checked ? "yes" : "");
+    params.set("human_made", form.querySelector("#f-elig-human").checked ? "yes" : "");
+
+    var sendBtn = form.querySelector('button[type="submit"]');
+    var sendLabel = sendBtn.textContent;
+    var submitMsg = document.getElementById("f-submit-msg");
+    submitMsg.hidden = true;
+    sendBtn.disabled = true;
+    sendBtn.textContent = "Sending…";
+
+    function onSuccess() {
+      sendBtn.disabled = false; sendBtn.textContent = sendLabel;
+      var first = name.split(" ")[0];
+      document.getElementById("confirm-body").textContent =
+        "Thank you, " + first + " — your " + section + " proposal is in.\nWatch your inbox for confirmation.";
+      show("confirm", "#confirm-h");
+      form.reset();
+      syncSegments();
+      form.querySelector("#f-loaded-at").value = String(Date.now());
+    }
+    function onError() {
+      sendBtn.disabled = false; sendBtn.textContent = sendLabel;
+      submitMsg.hidden = false;
+      submitMsg.innerHTML = 'Your proposal didn\u2019t send. Please check your connection and try again, or email <a href="mailto:submissions@firemag.org" style="color:inherit">submissions@firemag.org</a> directly.';
+    }
+
+    /* Apps Script web apps don't send CORS headers, so a normal cors fetch
+       can't READ the JSON reply. We POST with no-cors (a form-encoded body is
+       a CORS-safelisted "simple" request, so it still reaches doPost and writes
+       the row); a resolved promise = the POST completed = success. If the reply
+       ever IS readable, we parse {result:"success"} and honor it. Only a real
+       network failure rejects -> retry message. */
+    fetch(SUBMIT_ENDPOINT, { method: "POST", mode: "no-cors", body: params })
+      .then(function (res) {
+        if (res && res.type !== "opaque" && typeof res.json === "function") {
+          res.json().then(function (j) {
+            if (j && j.result && j.result !== "success") onError(); else onSuccess();
+          }).catch(onSuccess);
+        } else {
+          onSuccess(); /* opaque cross-origin response: completed POST = success */
+        }
+      })
+      .catch(onError);
+  });
+
+  /* ---------- active nav link on scroll ---------- */
+  var sections = ["the-call", "no-ai", "who", "the-work", "submit", "faq"];
+  var linkFor = {};
+  document.querySelectorAll(".nav a.lnk").forEach(function (a) {
+    var href = a.getAttribute("href"); if (href && href[0] === "#") linkFor[href.slice(1)] = a;
+  });
+  if ("IntersectionObserver" in window || true) {
+    var spyEls = sections.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    var spyTicking = false;
+    function updateSpy() {
+      spyTicking = false;
+      if (!spyEls.length) return;
+      var line = window.innerHeight * 0.4;
+      var current = spyEls[0];
+      for (var i = 0; i < spyEls.length; i++) {
+        if (spyEls[i].getBoundingClientRect().top <= line) current = spyEls[i];
+        else break;
+      }
+      // snap to the last section once the page is scrolled to the bottom
+      if ((window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 2)) {
+        current = spyEls[spyEls.length - 1];
+      }
+      document.querySelectorAll(".nav a.lnk").forEach(function (a) { a.removeAttribute("aria-current"); });
+      var a = current && linkFor[current.id]; if (a) a.setAttribute("aria-current", "true");
+    }
+    function onSpyScroll() { if (!spyTicking) { spyTicking = true; requestAnimationFrame(updateSpy); } }
+    window.addEventListener("scroll", onSpyScroll, { passive: true });
+    window.addEventListener("resize", onSpyScroll);
+    updateSpy();
+  }
+
+  /* ============================================================
+     TWEAKS — host protocol + persistence
+     ============================================================ */
+  var panel = document.getElementById("tweaks");
+  var TWEAK_DEFAULTS = { surface: "committed", hero: "m", ochre: "on" };
+  var ATTR = { surface: "data-surface", hero: "data-hero", ochre: "data-ochre" };
+  var state;
+  try { state = Object.assign({}, TWEAK_DEFAULTS, JSON.parse(localStorage.getItem("fire-tweaks") || "{}")); }
+  catch (err) { state = Object.assign({}, TWEAK_DEFAULTS); }
+
+  function applyTweaks() {
+    Object.keys(ATTR).forEach(function (k) { root.setAttribute(ATTR[k], state[k]); });
+    Object.keys(state).forEach(function (k) {
+      var group = panel.querySelector('[data-twk="' + k + '"]');
+      if (!group) return;
+      group.querySelectorAll("button").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-val") === state[k] ? "true" : "false");
+      });
+    });
+  }
+  applyTweaks();
+
+  panel.querySelectorAll("[data-twk] button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var key = b.parentNode.getAttribute("data-twk");
+      state[key] = b.getAttribute("data-val");
+      applyTweaks();
+      try { localStorage.setItem("fire-tweaks", JSON.stringify(state)); } catch (err) {}
+      var edits = {}; edits[key] = state[key];
+      try { window.parent.postMessage({ type: "__edit_mode_set_keys", edits: edits }, "*"); } catch (err) {}
+    });
+  });
+
+  /* host protocol: show/hide with the toolbar Tweaks toggle */
+  window.addEventListener("message", function (e) {
+    var t = e && e.data && e.data.type;
+    if (t === "__activate_edit_mode") panel.hidden = false;
+    else if (t === "__deactivate_edit_mode") panel.hidden = true;
+  });
+  try { window.parent.postMessage({ type: "__edit_mode_available" }, "*"); } catch (err) {}
+  document.querySelector("[data-twk-close]").addEventListener("click", function () {
+    panel.hidden = true;
+    try { window.parent.postMessage({ type: "__edit_mode_dismissed" }, "*"); } catch (err) {}
+  });
+
+  /* drag the panel by its header */
+  (function () {
+    var hd = panel.querySelector("[data-twk-drag]"), dragging = false, sx, sy, ox, oy;
+    hd.addEventListener("mousedown", function (e) {
+      dragging = true; var r = panel.getBoundingClientRect();
+      sx = e.clientX; sy = e.clientY; ox = r.left; oy = r.top;
+      panel.style.right = "auto"; panel.style.bottom = "auto"; panel.style.left = ox + "px"; panel.style.top = oy + "px";
+      e.preventDefault();
+    });
+    window.addEventListener("mousemove", function (e) {
+      if (!dragging) return;
+      panel.style.left = Math.max(4, ox + e.clientX - sx) + "px";
+      panel.style.top = Math.max(4, oy + e.clientY - sy) + "px";
+    });
+    window.addEventListener("mouseup", function () { dragging = false; });
+  })();
+})();
+</script>
+
+<script>
+/* ============================================================
+   SET-PIECE 2 — 1926 → 2026 lineage scroll driver.
+   Scrubs to scroll position; collapses to static under reduced-motion.
+   ============================================================ */
+(function () {
+  "use strict";
+  var seq = document.getElementById("lineage-seq");
+  if (!seq) return;
+  var imgs = seq.querySelectorAll(".seq__img");
+  var yearEl = document.getElementById("seq-year");
+  var capEl = document.getElementById("seq-cap");
+  var bar = document.getElementById("seq-bar");
+  var N = imgs.length;
+  var caps = [
+    "<b>FIRE!! — No. 1</b> · cover by Aaron Douglas, 1926 · Public domain",
+    "<b>Juan de Pareja</b> · Diego Velázquez, 1650 · Public domain",
+    "<b>Yarrow Mamout</b> · Charles Willson Peale, 1819 · Public domain",
+    "<b>Toussaint Louverture</b> · after life, 19th century · Public domain",
+    "<b>Dred Scott</b> · Louis Schultze, 1881 · Public domain",
+    "<b>Frederick Douglass</b> · Unknown artist, c. 1840s · Public domain",
+    "<b>The Lord Is My Shepherd</b> · Eastman Johnson, 1863 · Public domain",
+    "<b>Portrait of a Woman</b> · Eastman Johnson, c. 1867 · Public domain",
+    "<b>Ira Aldridge</b> · Unknown, 19th century · Public domain",
+    "<b>James &lsquo;Jem&rsquo; Wharton</b> · William Daniels, 19th century · Public domain",
+    "<b>Mother of Henry O. Tanner</b> · Henry Ossawa Tanner, c. 1897 · Public domain",
+    "<b>Market Woman</b> · Thomas Waterman Wood, c. 1858 · Public domain",
+    "<b>Two Musicians</b> · Robert Lee MacCameron, c. 1900 · Public domain",
+    "<b>Anna Washington Derry</b> · Laura Wheeler Waring, 1927 · Public domain",
+    "<b>Girl in a Pink Dress</b> · Laura Wheeler Waring, c. 1920s · Public domain",
+    "<b>Charles S. Johnson</b> · Winold Reiss, c. 1925 · Public domain",
+    "<b>Countee Cullen</b> · Winold Reiss, c. 1925 · Public domain",
+    "<b>Paul Robeson</b> · Winold Reiss, c. 1925 · Public domain",
+    "<b>Minnie</b> · William H. Johnson, c. 1930 · Public domain",
+    "<b>Little Girl</b> · William H. Johnson, c. 1944 · Public domain",
+    "<b>Young Pastry Cook</b> · William H. Johnson, c. 1930 · Public domain",
+    "<b>Jenny</b> · Dox Thrash, c. 1940 · Public domain",
+    "<b>Played Out</b> · Dox Thrash, c. 1939 · Public domain",
+    "<b>Harlem Street Scene</b> · Charles Henry Alston, c. 1930s · Public domain",
+    "<b>The Savoy</b> · Dayton Brandfield, c. 1940 · Public domain",
+    "<b>Harlem WPA Street Dance</b> · Elizabeth Olds, c. 1940 · Public domain",
+    "<b>Spirituals</b> · Lillian Richter Reynolds, c. 1940 · Public domain",
+    "<b>Mulatto</b> · Aaron Douglas, c. 1925 · the hand behind the original 1926 FIRE!! cover · Public domain",
+    "<b>The Crisis</b> · cover, May 1927 · The Crisis Magazine · Public domain",
+    "<b>St. Louis Blues</b> · film poster, 1929 · Sack Amusement Enterprises · Public domain",
+    "<b>Street Life, Harlem</b> · William H. Johnson, c. 1939 · Public domain",
+    "<b>Government Charwoman</b> · Gordon Parks, 1942 · Public domain",
+    "<b>Louis Armstrong</b> · William P. Gottlieb, c. 1946 · Public domain",
+    "<b>Untitled, Chicago</b> · John H. White · DOCUMERICA, 1973 · U.S. National Archives",
+    "<b>Study for God's Trombones</b> · Aaron Douglas, c. 1927 · Public domain",
+    "<b>Swing Low, Sweet Chariot</b> · Archibald Motley, 1934 · Public domain",
+    "<b>Zora Neale Hurston</b> · Carl Van Vechten, 1938 · Public domain",
+    "<b>Booker T. Washington Monument</b> · Richmond Barthé, dedicated 1922 · Public domain",
+    "<b>Go Down, Death!</b> · Spencer Williams, 1944 · Sack Attractions · Public domain",
+    "<b>The Negro Soldier</b> · U.S. War Department, 1944 · Public domain",
+    "<b>Miles Davis</b> · William P. Gottlieb, c. 1947 · Public domain",
+    "<b>The Crisis</b> · cover by Frank Walts, October 1919 · Public domain",
+    "<b>Roadside Store, Alabama</b> · Walker Evans · FSA, 1936 · Library of Congress · Public domain",
+    "<b>Let My People Go</b> · Aaron Douglas, c. 1939 · The Metropolitan Museum of Art · Public domain",
+    "<b>William H. Johnson</b> · Smithsonian American Art Museum · Public domain",
+    "<b>Ezekiel Saw the Wheel</b> · William H. Johnson, 1945 · Public domain",
+    "<b>Head of a Boy</b> · Richmond Barthé · National Gallery of Art · Public domain",
+    "<b>The Blackberry Woman</b> · Richmond Barthé, 1932 · Whitney Museum of American Art · Public domain",
+    "<b>James L. Allen</b> · Harlem Renaissance photographer · Harmon Foundation · Public domain",
+    "<b>Langston Hughes</b> · Carl Van Vechten, 1939 · Public domain",
+    "<b>Bessie Smith</b> · Carl Van Vechten, 1936 · Library of Congress · Public domain"
+  ];
+  var years = null;
+  // Odometer year reels — roll 1926 → 2026 across the scroll (the lineage counter).
+  var YSTART = 1926, YEND = 2026, YN = YEND - YSTART, reels = [];
+  if (yearEl) {
+    yearEl.textContent = "";
+    [1000, 100, 10, 1].forEach(function (place) {
+      var win = document.createElement("div"); win.className = "win";
+      var strip = document.createElement("div"); strip.className = "strip";
+      for (var i = 0; i <= YN; i++) {
+        var c = document.createElement("div"); c.className = "cell";
+        c.textContent = Math.floor((YSTART + i) / place) % 10; strip.appendChild(c);
+      }
+      win.appendChild(strip); yearEl.appendChild(win); reels.push(strip);
+    });
+  }
+  var cellH = 0;
+  function setYear(p) {
+    if (!reels.length) return;
+    if (!cellH) cellH = reels[0].firstChild.getBoundingClientRect().height || 0;
+    var yi = (p < 0 ? 0 : p > 1 ? 1 : p) * YN;
+    for (var i = 0; i < reels.length; i++) reels[i].style.transform = "translateY(" + (-yi * cellH) + "px)";
+  }
+  window.addEventListener("resize", function () { cellH = 0; });
+  function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+  function setFrame(idx) {
+    for (var i = 0; i < N; i++) imgs[i].classList.toggle("on", i === idx);
+    if (capEl) capEl.innerHTML = caps[idx] || "";
+  }
+
+  // Aaron Douglas (last plate) is the hinge — hold it through the final stretch.
+  var HOLD = 0.86;
+  var cur = -1;
+  function update() {
+    var total = seq.offsetHeight - window.innerHeight;
+    var p = total > 0 ? clamp(-seq.getBoundingClientRect().top / total, 0, 1) : 0;
+    var idx = p < HOLD ? Math.floor((p / HOLD) * (N - 1)) : N - 1;
+    idx = clamp(idx, 0, N - 1);
+    if (idx !== cur) { cur = idx; setFrame(idx); }
+    setYear(p);
+    if (bar) bar.style.width = (p * 100).toFixed(1) + "%";
+  }
+
+  // Drive with a rAF loop gated by visibility — robust where 'scroll'
+  // events don't fire (some embedded/preview contexts).
+  var running = false;
+  function loop() { update(); if (running) requestAnimationFrame(loop); }
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !running) { running = true; requestAnimationFrame(loop); }
+        else if (!e.isIntersecting) { running = false; }
+      });
+    }, { rootMargin: "300px 0px" }).observe(seq);
+  } else {
+    running = true; requestAnimationFrame(loop);
+  }
+  // Also update directly on scroll/resize — works even where rAF is throttled.
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+})();
+</script>
+
+<script>
+/* ============================================================
+   FORM PLUMBING — page-load timestamp, JS takeover of validation,
+   and the Aug 15 2026 deadline auto-close. Dependency-free.
+   Without JS, the <form method="POST" action> posts natively
+   with the browser's built-in `required` validation.
+   ============================================================ */
+(function () {
+  "use strict";
+  var form = document.querySelector("form.cfp");
+  if (!form) return;
+
+  /* JS is on: suppress native bubbles so our error style takes over.
+     Set here (not in markup) so no-JS users keep native validation. */
+  form.setAttribute("novalidate", "");
+
+  /* stamp page-load time; backend rejects submissions completed in under ~2s */
+  var ts = document.getElementById("f-loaded-at");
+  if (ts) ts.value = String(Date.now());
+
+  /* ---------- deadline auto-close ----------
+     August 15, 2026 23:59:59 America/Los_Angeles (PDT, UTC−7). */
+  var DEADLINE = Date.UTC(2026, 7, 16, 6, 59, 59);
+  if (Date.now() <= DEADLINE) return; /* still open: leave the form fully active */
+
+  /* past the deadline: lock every control, swap the button to the closed variant */
+  Array.prototype.forEach.call(form.querySelectorAll("input, textarea, button"), function (el) { el.disabled = true; });
+  var btn = form.querySelector('button[type="submit"]');
+  if (btn) { btn.classList.add("btn--closed"); btn.textContent = "Closed"; }
+
+  /* replace the form area with the closed-state message */
+  var closed = document.createElement("div");
+  closed.innerHTML =
+    '<p class="kicker" style="margin-top:2.5rem; color:var(--acc)">Closed</p>' +
+    '<h3 class="display" style="font-size:clamp(1.85rem,4vw,2.6rem); color:var(--hd); margin:0.4rem 0 0">Submissions are closed for 2026.</h3>' +
+    '<p class="stand"><em>The fire returns. The next call will be announced here and in the pages of No.\u00a02.</em></p>' +
+    '<p style="font-family:var(--font-body); font-style:italic; font-size:0.95rem; color:var(--tx2); margin-top:1.5rem">Deadline · August 15, 2026</p>';
+  form.hidden = true;
+  form.parentNode.insertBefore(closed, form);
+})();
+</script>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#d73337"/>
+    <text x="50" y="60" text-anchor="middle" font-family="Impact,sans-serif" font-weight="900" font-size="30" fill="#201514">F!!!</text>
+  </svg>
+</template>
+
+</body>
+</html>

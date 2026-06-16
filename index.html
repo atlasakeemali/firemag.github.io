@@ -413,7 +413,17 @@
     .seq__manifesto{ white-space:normal; text-wrap:pretty; font-size:1rem; max-width:34ch; }
     .seq__cap{ left:clamp(1.25rem,5vw,4rem); max-width:none; font-size:0.8rem; }
   }
-</style>
+      /* ---------- mobile refinements (A2 merge) ---------- */
+      @media (max-width:520px){
+        .nav .wrap{ gap:0.6rem 1rem; padding:0.7rem 0; }
+        .nav__mark{ font-size:1.35rem; }
+        .nav__links{ gap:0.6rem 1rem; }
+        .nav a.lnk{ font-size:0.72rem; letter-spacing:0.1em; }
+        .hero__cta, .faq__cta{ flex-direction:column; align-items:stretch; }
+        .hero__cta .btn, .faq__cta .btn{ width:100%; justify-content:center; }
+        .elig li{ gap:0.9rem; }
+        .steps li{ gap:0.9rem; }
+      }</style>
 </head>
 <body>
 <a class="skip-link" href="#the-call">Skip to the call</a>
